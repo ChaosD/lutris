@@ -193,7 +193,7 @@ class wineegs(wine.wine):
         """Return the working directory to use when running the game."""
         if self.game_config.get("run_without_egs"):
              return self.game_path
-        return os.path.expanduser("~/")
+        return self.egs_path
 
     @property
     def launch_args(self):
